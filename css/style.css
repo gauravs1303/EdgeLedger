@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-primary {
+    color: #93cb52;
+}
+
+.text-center {
+    text-align: center
+}
+
+@import url('https://fonts.googleapis.com/css?family=Notable&display=swap');
+
+.l-heading {
+    font: 40px/1 'Notable', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-fill-color: transparent;
+}
+
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background:  #75a241;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.btn:hover {
+    background: #587931;
+    box-shadow: 
+    -1px -1px 1.5px #c9e5a8,  
+     1px -1px 1.5px #c9e5a8,
+    -1px  1px 1.5px #c9e5a8,
+     1px  1px 1.5px #c9e5a8;
+}
+
+.btn-dark {
+    background: #333;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background: #444;
+    box-shadow: 
+    -1px -1px 1.5px #c9e5a8,  
+     1px -1px 1.5px #c9e5a8,
+    -1px  1px 1.5px #c9e5a8,
+     1px  1px 1.5px #c9e5a8;
+}
+
+.list{
+    list-style: none;
+    margin: 0.5rem 1rem;
+}
+.list li {
+    width: 13rem;
+    padding: .5rem;
+    border-bottom: #444 dotted 1px;
+}
+
+/* Padding left-right */
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+/* All Side */
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+.bg-dark {
+    background: #0e1408;
+    color: #f4f4f4;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+/* Navbar */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: 00.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover{
+    background: #93cb52;
+    border-radius: 5px;
+    text-decoration: underline 5px #496529;
+}
+
+/* Showcase */
+#home {
+    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #e9f4dc;
+}
+
+#home .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 101%;
+    /* width: 100%; */
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+/* Section:What */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: #f4f9ed;
+    border: 0.5px solid #deefcb;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Section:who */
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+    /* padding: 1rem; */
+}
+
+#who .who-img {
+    background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* Section: Clients */
+
+#clients .items{
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+/* Section: Contact */
+#contact{
+    display: flex;
+}
+
+#contact input:focus, 
+#contact textarea:focus {
+    background: #d3eab9;
+    outline: none;
+    border: #333 solid 1.1px;
+    filter: blur(0.3px);
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form .form-group input,
+#contact .contact-form textarea { 
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.btn-send {
+    display: block;
+    margin: auto;
+    padding: 0.5rem 3rem;
+}
+
+.map {
+    margin: 0;
+    padding-left: 1.5rem;
+}
